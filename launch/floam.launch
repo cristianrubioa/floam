@@ -2,7 +2,7 @@
 <launch>
 
     
-    <node pkg="rosbag" type="play" name="rosbag_play" args="--clock $(env HOME)/Downloads/2011_09_30_0018.bag"/> 
+    <node pkg="rosbag" type="play" name="rosbag_play" args="--clock /home/crubio/catkin_ws/src/methods_lidar_3d/sequences/05/05.bag"/> 
 
     <!-- For Velodyne VLP-16 
     <param name="scan_line" value="16" />
@@ -19,7 +19,7 @@
     <!--- Sim Time -->
     <param name="/use_sim_time" value="true" />
     <param name="scan_period" value="0.1" /> 
-    <param name="RESULT_PATH" type="string" value="$/home/crubio/catkin_ws/src/methods_lidar_3d/sequences/05/floam.txt" />
+    <param name="RESULT_PATH" type="string" value="/home/crubio/catkin_ws/src/methods_lidar_3d/sequences/05/floam.txt" />
     <param name="vertical_angle" type="double" value="2.0" />
     <param name="max_dis" type="double" value="90.0" />
     <param name="min_dis" type="double" value="3.0" />
