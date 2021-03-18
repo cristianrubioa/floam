@@ -3,6 +3,7 @@
 
     
     <node pkg="rosbag" type="play" name="rosbag_play" args="--clock /home/crubio/catkin_ws/src/methods_lidar_3d/sequences/05/05.bag"/> 
+    <remap from="/velodyne_points" to="kitti/velo/pointcloud" />
 
     <!-- For Velodyne VLP-16 
     <param name="scan_line" value="16" />
