@@ -26,6 +26,15 @@
 #include "lidar.h"
 #include "odomEstimationClass.h"
 
+//declare var
+int init_flag=true;
+
+    Eigen::Matrix4f H;
+    Eigen::Matrix4f H_init;
+    Eigen::Matrix4f H_rot;
+
+std::string RESULT_PATH;
+
 OdomEstimationClass odomEstimation;
 std::mutex mutex_lock;
 std::queue<sensor_msgs::PointCloud2ConstPtr> pointCloudEdgeBuf;
